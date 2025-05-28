@@ -1,1 +1,0 @@
-// write code for auth middleware
