@@ -42,7 +42,7 @@ class MyCustomReporter {
     };
 
     try {
-      const data = fs.readFileSync('../../custom.ih', 'utf8')
+      const data = fs.readFileSync('../custom.ih', 'utf8')
       customData = data;
     } catch (err) {
       console.error(err)
@@ -133,7 +133,7 @@ const writeTextFiles = function (result, outputFiles, cb) {
   testCaseResult_Dto.isMandatory = true;
   testCaseResult_Dto.erroMessage = "";
 
-  let GUID = "ca05fcd2-022a-413d-bd66-86a2c885c146";
+  let GUID = "d805050e-a0d8-49b0-afbd-46a486105170";
   //let customData = "Some Custom Data";
   //testCaseResults.set(this.GUID,JSON.stringify(testCaseResult_Dto));
   testCaseResults[GUID] = testCaseResult_Dto;
@@ -151,7 +151,7 @@ const writeTextFiles = function (result, outputFiles, cb) {
 
   var XMLHttpRequest = require('xhr2');
   var xhr = new XMLHttpRequest();
-  var url = "https://yaksha-prod-sbfn.azurewebsites.net/api/YakshaMFAEnqueue?code=jSTWTxtQ8kZgQ5FC0oLgoSgZG7UoU9Asnmxgp6hLLvYId/GW9ccoLw==";
+  var url = "https://compiler.techademy.com/v1/mfa-results/push";
   xhr.open("POST", url, true);
   xhr.setRequestHeader("Content-Type", "application/json");
   xhr.onreadystatechange = function () {
